@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bernice Tang Ngoufo | Software Engineer</title>
+<meta name="description" content="Portfolio of Bernice Tang Ngoufo, Software Engineering student and full-stack developer." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<div class="noise-overlay"></div>
+
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+  <a href="#home" class="nav-logo">BT<span class="dot">.</span></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="assets/resume_EN.pdf" target="_blank" class="btn btn-small nav-cta">Resume</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-text reveal">
+      <p class="eyebrow">👋 Hello, I'm</p>
+      <h1 class="hero-title">Bernice Tang<br><span class="gradient-text">Ngoufo</span></h1>
+      <h2 class="hero-role">
+        <span class="typed" id="typed"></span><span class="cursor-blink">|</span>
+      </h2>
+      <p class="hero-desc">
+        Software Engineering student at Université Laval building resilient backend systems,
+        slick full-stack apps, and everything in between, from JVM services at scale to
+        pixel-level frontend polish.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.43 7.86 10.96.57.1.78-.25.78-.55v-2.15c-3.2.7-3.87-1.35-3.87-1.35-.53-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.9 10.9 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.81 1.18 1.84 1.18 3.1 0 4.43-2.68 5.4-5.24 5.69.41.36.78 1.07.78 2.15v3.19c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="mailto:bernicetangngoufo@gmail.com" aria-label="Email" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M1.5 4.5h21a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-21a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1Zm1.94 2 8.56 6.85L20.56 6.5H3.44Zm18.06 1.62-8.1 6.48a1 1 0 0 1-1.24 0L2.5 8.12V17.5h19V8.12Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap reveal">
+      <div class="hero-photo-ring"></div>
+      <div class="hero-photo-frame">
+        <img src="assets/Bernice.png" alt="Portrait of Bernice Tang Ngoufo" class="hero-photo" />
+      </div>
+      <div class="floating-badge badge-1">☕ Java</div>
+      <div class="floating-badge badge-2">⚡ Software Developer</div>
+      <div class="floating-badge badge-3">🐍 Python</div>
+      <div class="floating-badge badge-4">🧩 C++</div>
+      <div class="floating-badge badge-5">🧠 Problem Solver</div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <span></span>
+  </a>
+</header>
+
+<!-- ABOUT -->
+<section class="section about-section" id="about">
+  <div class="section-bg-image about-bg"></div>
+  <div class="container">
+    <p class="section-tag reveal">Get to know me</p>
+    <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>
+          I'm a final-year Software Engineering student at <strong>Université Laval</strong>
+          (GPA 3.82/4.33, graduating December 2026), with four internships behind me: two at
+          <strong> Ticketmaster</strong> working on high-volume ticketing platforms, one at
+          <strong> iA Financial Group</strong> building backend systems for insurance products,
+          and the one that started it all at <strong> Retraite Québec</strong>, where I began
+          as an intern and grew into an Analyst Developer role automating workflows for a
+          government pension fund.
+        </p>
+        <p>
+          Most of what I've shipped sits in the backend and platform layer: Kafka pipelines,
+          Spring Boot microservices, Kubernetes deployments, and the unglamorous but critical
+          work of making systems resilient when things go wrong. I like the moment a fix turns
+          a flaky, manual process into something boring and reliable. I'm genuinely stimulated
+          by problem-solving, the harder the challenge, the more engaged I get.
+        </p>
+        <p>
+          Outside of internships, I build side projects to learn things my day job doesn't
+          cover yet: data pipelines, mapping APIs, embedded tooling. Bilingual in French and
+          English, based in Québec City.
+        </p>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-count="4">0</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="89" data-suffix="%">0</span>
+            <span class="stat-label">Peak test coverage lift</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="5" data-suffix="x">0</span>
+            <span class="stat-label">Capacity boost shipped</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="75" data-suffix="h">0</span>
+            <span class="stat-label">Saved monthly via automation</span>
+          </div>
+        </div>
+
+        <div class="hobbies-block">
+          <h3 class="hobbies-title">Beyond the Code</h3>
+          <p class="hobbies-desc">
+            I'm energized by new challenges, and that drive doesn't stop when I close my laptop.
+          </p>
+          <div class="chip-row hobbies-chips">
+            <span class="chip hobby-chip">🏋️ Gym &amp; Fitness</span>
+            <span class="chip hobby-chip">🏃 Running</span>
+            <span class="chip hobby-chip">✈️ Traveling</span>
+            <span class="chip hobby-chip">💇🏾‍♀️ Braids Stylist</span>
+            <span class="chip hobby-chip">📖 Reading</span>
+            <span class="chip hobby-chip">🎵 Music</span>
+            <span class="chip hobby-chip">🧩 New Challenges</span>
+          </div>
+          <p class="hobbies-note">
+            I'm also a self-taught braids stylist, and I love making people feel beautiful.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-visual reveal">
+        <div class="info-card">
+          <h3>Quick Facts</h3>
+          <ul class="info-list">
+            <li><span>🎓</span> B.Sc. Software Engineering, Laval University</li>
+            <li><span>📍</span> Quebec City, QC, Canada</li>
+            <li><span>💬</span> Bilingual: English &amp; French</li>
+            <li><span>🛠️</span> Java · Python · TypeScript · React</li>
+            <li><span>☁️</span> AWS · Kubernetes · Docker · Kafka</li>
+          </ul>
+          <a href="assets/resume_EN.pdf" target="_blank" class="btn btn-primary btn-full">Download Résumé</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section experience-section" id="experience">
+  <div class="container">
+    <p class="section-tag reveal">Where I've worked</p>
+    <h2 class="section-title reveal">Professional <span class="gradient-text">Experience</span></h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot dot-color-1"></div>
+        <div class="timeline-card">
+          <div class="timeline-head">
+            <div>
+              <h3>Software Developer Intern</h3>
+              <span class="timeline-company">Ticketmaster</span>
+            </div>
+            <span class="timeline-date">May 2026 – Aug. 2026</span>
+          </div>
+          <ul>
+            <li>Fixed a bug that was stalling ticket orders, restoring processing with 97% test coverage</li>
+            <li>Improved system capacity to handle 5x more purchases during high-demand on-sales</li>
+            <li>Migrated an older ticket system onto the company's modern platform, with no disruption to customers</li>
+            <li>Updated a core API used across 7 parts of the site without breaking any existing features</li>
+            <li>Enabled software updates to go live with zero downtime for customers</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot dot-color-2"></div>
+        <div class="timeline-card">
+          <div class="timeline-head">
+            <div>
+              <h3>Full Stack Developer Intern</h3>
+              <span class="timeline-company">iA Financial Group</span>
+            </div>
+            <span class="timeline-date">Jan. 2026 – Apr. 2026</span>
+          </div>
+          <ul>
+            <li>Cut recurring incidents in insurance systems serving millions via domain-specific error handling</li>
+            <li>Restored cross-service transaction traceability by fixing JSON and MongoDB persistence defects</li>
+            <li>Raised automated coverage on critical workflows with Apache Camel unit and integration tests</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot dot-color-3"></div>
+        <div class="timeline-card">
+          <div class="timeline-head">
+            <div>
+              <h3>Software Developer Intern</h3>
+              <span class="timeline-company">Ticketmaster</span>
+            </div>
+            <span class="timeline-date">May 2025 – Aug. 2025</span>
+          </div>
+          <ul>
+            <li>Removed a 1MB / 425-order processing limit through event pagination, enabling large-scale events</li>
+            <li>Raised automated test coverage from 28% to 89.41% (JUnit, Mockito, GitLab CI job with JaCoCo)</li>
+            <li>Reduced support load by hardening error handling for third-party outages (GOLI, Atlas, Inventory)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot dot-color-4"></div>
+        <div class="timeline-card">
+          <div class="timeline-head">
+            <div>
+              <h3>Analyst Developer</h3>
+              <span class="timeline-company">Retraite Québec</span>
+            </div>
+            <span class="timeline-date">May 2024 – Dec. 2025</span>
+          </div>
+          <ul>
+            <li>Saved 75 hours monthly by automating email reports for 120 administrative units (Power Automate)</li>
+            <li>Shipped a company-wide Power Apps tool raising employee awareness of conflicts of interest</li>
+            <li>Migrated SharePoint sites with zero data loss and improved form usability (Power Apps, Figma)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects-section" id="projects">
+  <div class="section-bg-image projects-bg"></div>
+  <div class="container">
+    <p class="section-tag reveal">Selected work</p>
+    <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal" style="--accent:#7c5cff;--accent2:#ff6ec7;">
+        <div class="project-media pattern-1">
+          <span class="project-emoji">🚨</span>
+        </div>
+        <div class="project-body">
+          <h3>Campus Alarm Management System</h3>
+          <p>A campus security system processing fire, intrusion, and access-control events with automated, rule-driven responses.</p>
+          <div class="tech-tags">
+            <span>Java</span><span>REST</span><span>DDD</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--accent:#34d0c6;--accent2:#3b82f6;">
+        <div class="project-media pattern-2">
+          <span class="project-emoji">🥗</span>
+        </div>
+        <div class="project-body">
+          <h3>Open Food Facts Canada</h3>
+          <p>An ETL pipeline merging food data from 3 sources and computing nutrition scores, served through a Flask API.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>Flask</span><span>MySQL</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--accent:#ff8a5c;--accent2:#ffd166;">
+        <div class="project-media pattern-3">
+          <span class="project-emoji">🍽️</span>
+        </div>
+        <div class="project-body">
+          <h3>Interactive Restaurant Finder</h3>
+          <p>A web app to search restaurants, save favorites, and manage visits with live map-based filtering.</p>
+          <div class="tech-tags">
+            <span>Vue</span><span>Leaflet.js</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--accent:#5c8bff;--accent2:#7c5cff;">
+        <div class="project-media pattern-4">
+          <span class="project-emoji">🖥️</span>
+        </div>
+        <div class="project-body">
+          <h3>CNC Panel Project</h3>
+          <p>A desktop app for AVID CNC machines featuring tool management, GCODE export, and 3D simulation.</p>
+          <div class="tech-tags">
+            <span>Java</span><span>Swing</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--accent:#ff6ec7;--accent2:#ff8a5c;">
+        <div class="project-media pattern-5">
+          <span class="project-emoji">🛒</span>
+        </div>
+        <div class="project-body">
+          <h3>NRO Electronics</h3>
+          <p>A full-stack inventory and checkout/sales app for a retail chain, with JWT auth and role-based permissions.</p>
+          <div class="tech-tags">
+            <span>React</span><span>Node.js</span><span>MySQL</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section skills-section" id="skills">
+  <div class="container">
+    <p class="section-tag reveal">What I work with</p>
+    <h2 class="section-title reveal">Skills &amp; <span class="gradient-text">Tools</span></h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3><span class="skill-icon">💻</span> Languages</h3>
+        <div class="chip-row">
+          <span class="chip">Java</span><span class="chip">Python</span><span class="chip">C++</span>
+          <span class="chip">C</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span>
+          <span class="chip">HTML</span><span class="chip">CSS</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="skill-icon">🗄️</span> Backend &amp; Data</h3>
+        <div class="chip-row">
+          <span class="chip">Spring Boot</span><span class="chip">Spring Kafka</span><span class="chip">Flask</span>
+          <span class="chip">REST</span><span class="chip">GraphQL</span><span class="chip">Hibernate</span>
+          <span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">CQL</span><span class="chip">DuckDB</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="skill-icon">☁️</span> Cloud &amp; DevOps</h3>
+        <div class="chip-row">
+          <span class="chip">AWS</span><span class="chip">Kubernetes</span><span class="chip">Docker</span>
+          <span class="chip">Helm</span><span class="chip">Apache Kafka</span><span class="chip">GitLab CI</span>
+          <span class="chip">Azure DevOps</span><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Dynatrace</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="skill-icon">🎨</span> Frontend &amp; Tools</h3>
+        <div class="chip-row">
+          <span class="chip">React</span><span class="chip">Vue</span><span class="chip">Angular</span>
+          <span class="chip">JUnit</span><span class="chip">Mockito</span><span class="chip">Cucumber</span>
+          <span class="chip">Postman</span><span class="chip">Git</span><span class="chip">Jira</span><span class="chip">Figma</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="section-bg-image contact-bg"></div>
+  <div class="container contact-container">
+    <p class="section-tag reveal">Let's talk</p>
+    <h2 class="section-title reveal">Get In <span class="gradient-text">Touch</span></h2>
+    <p class="contact-sub reveal">
+      Have an opportunity, a project, or just want to say hi? My inbox is open.
+    </p>
+
+    <div class="contact-grid reveal">
+      <a href="mailto:bernicetangngoufo@gmail.com" class="contact-card">
+        <span class="contact-icon">✉️</span>
+        <span class="contact-label">Email</span>
+        <span class="contact-value">bernicetangngoufo@gmail.com</span>
+      </a>
+      <a href="tel:+13656884442" class="contact-card">
+        <span class="contact-icon">📱</span>
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">365-688-4442</span>
+      </a>
+      <div class="contact-card">
+        <span class="contact-icon">📍</span>
+        <span class="contact-label">Location</span>
+        <span class="contact-value">Quebec City, QC, Canada</span>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+      </div>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Designed &amp; built by Bernice Tang Ngoufo · <span id="year"></span></p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
