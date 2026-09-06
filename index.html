@@ -134,25 +134,6 @@
             <span class="stat-label">Saved monthly via automation</span>
           </div>
         </div>
-
-        <div class="hobbies-block">
-          <h3 class="hobbies-title">Beyond the Code</h3>
-          <p class="hobbies-desc">
-            I'm energized by new challenges, and that drive doesn't stop when I close my laptop.
-          </p>
-          <div class="chip-row hobbies-chips">
-            <span class="chip hobby-chip">🏋️ Gym &amp; Fitness</span>
-            <span class="chip hobby-chip">🏃 Running</span>
-            <span class="chip hobby-chip">✈️ Traveling</span>
-            <span class="chip hobby-chip">💇🏾‍♀️ Braids Stylist</span>
-            <span class="chip hobby-chip">📖 Reading</span>
-            <span class="chip hobby-chip">🎵 Music</span>
-            <span class="chip hobby-chip">🧩 New Challenges</span>
-          </div>
-          <p class="hobbies-note">
-            I'm also a self-taught braids stylist, and I love making people feel beautiful.
-          </p>
-        </div>
       </div>
 
       <div class="about-visual reveal">
@@ -166,6 +147,46 @@
             <li><span>☁️</span> AWS · Kubernetes · Docker · Kafka</li>
           </ul>
           <a href="assets/resume_EN.pdf" target="_blank" class="btn btn-primary btn-full">Download Résumé</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hobbies-block reveal">
+      <div class="hobbies-head">
+        <h3 class="hobbies-title">Beyond the Code</h3>
+        <p class="hobbies-desc">
+          I'm energized by new challenges, and that drive doesn't stop when I close my laptop.
+        </p>
+      </div>
+      <div class="hobby-grid">
+        <div class="hobby-item">
+          <span class="hobby-icon">🏋️</span>
+          <span class="hobby-label">Gym &amp; Fitness</span>
+        </div>
+        <div class="hobby-item">
+          <span class="hobby-icon">🏃</span>
+          <span class="hobby-label">Running</span>
+        </div>
+        <div class="hobby-item">
+          <span class="hobby-icon">✈️</span>
+          <span class="hobby-label">Traveling</span>
+        </div>
+        <div class="hobby-item">
+          <span class="hobby-icon">💇🏾‍♀️</span>
+          <span class="hobby-label">Braids Stylist</span>
+          <span class="hobby-sub">I love making people feel beautiful</span>
+        </div>
+        <div class="hobby-item">
+          <span class="hobby-icon">📖</span>
+          <span class="hobby-label">Reading</span>
+        </div>
+        <div class="hobby-item">
+          <span class="hobby-icon">🎵</span>
+          <span class="hobby-label">Music</span>
+        </div>
+        <div class="hobby-item">
+          <span class="hobby-icon">🧩</span>
+          <span class="hobby-label">New Challenges</span>
         </div>
       </div>
     </div>
@@ -191,11 +212,10 @@
             <span class="timeline-date">May 2026 – Aug. 2026</span>
           </div>
           <ul>
-            <li>Fixed a bug that was stalling ticket orders, restoring processing with 97% test coverage</li>
-            <li>Improved system capacity to handle 5x more purchases during high-demand on-sales</li>
-            <li>Migrated an older ticket system onto the company's modern platform, with no disruption to customers</li>
-            <li>Updated a core API used across 7 parts of the site without breaking any existing features</li>
-            <li>Enabled software updates to go live with zero downtime for customers</li>
+            <li>Eliminated a critical incident freezing purchase processing by adding validation to reject scans on non-existent seats, verified with 97% test coverage</li>
+            <li>Scaled the purchase pipeline's parallelism by growing Kafka topics and consumer replicas</li>
+            <li>Integrated a legacy ticketing system into the event-driven platform (Java, Spring, Kafka)</li>
+            <li>Delivered a fan-facing feature for assigning seats to dependents across 5 services via a two-wave rollout preserving backward compatibility</li>
           </ul>
         </div>
       </div>
@@ -211,7 +231,7 @@
             <span class="timeline-date">Jan. 2026 – Apr. 2026</span>
           </div>
           <ul>
-            <li>Cut recurring incidents in insurance systems serving millions via domain-specific error handling</li>
+            <li>Cut recurring incidents in insurance microservices (Java, Spring Boot) via domain-specific error handling</li>
             <li>Restored cross-service transaction traceability by fixing JSON and MongoDB persistence defects</li>
             <li>Raised automated coverage on critical workflows with Apache Camel unit and integration tests</li>
           </ul>
@@ -229,7 +249,7 @@
             <span class="timeline-date">May 2025 – Aug. 2025</span>
           </div>
           <ul>
-            <li>Removed a 1MB / 425-order processing limit through event pagination, enabling large-scale events</li>
+            <li>Removed a 1MB/425-order limit in a Java/Spring Boot service via event pagination, enabling large-scale events</li>
             <li>Raised automated test coverage from 28% to 89.41% (JUnit, Mockito, GitLab CI job with JaCoCo)</li>
             <li>Reduced support load by hardening error handling for third-party outages (GOLI, Atlas, Inventory)</li>
           </ul>
@@ -247,9 +267,8 @@
             <span class="timeline-date">May 2024 – Dec. 2025</span>
           </div>
           <ul>
-            <li>Saved 75 hours monthly by automating email reports for 120 administrative units (Power Automate)</li>
-            <li>Shipped a company-wide Power Apps tool raising employee awareness of conflicts of interest</li>
-            <li>Migrated SharePoint sites with zero data loss and improved form usability (Power Apps, Figma)</li>
+            <li>Saved 75 hours monthly by automating email reports for 120 administrative units (Power Apps, Power Automate)</li>
+            <li>Raised employee awareness of conflicts of interest by designing and shipping a company-wide self-assessment tool</li>
           </ul>
         </div>
       </div>
@@ -267,21 +286,23 @@
 
     <div class="projects-grid">
 
-      <article class="project-card reveal" style="--accent:#7c5cff;--accent2:#ff6ec7;">
+      <article class="project-card is-private reveal" style="--accent:#7c5cff;--accent2:#ff6ec7;">
         <div class="project-media pattern-1">
+          <span class="private-badge" title="Repository access is restricted">🔒 Private</span>
           <span class="project-emoji">🚨</span>
         </div>
         <div class="project-body">
           <h3>Campus Alarm Management System</h3>
-          <p>A campus security system processing fire, intrusion, and access-control events with automated, rule-driven responses.</p>
+          <p>A campus security system handling 5 event types (fire, pre-alarm, intrusion, gatherings, access control) with automated responses via REST API, using DDD and hexagonal architecture.</p>
           <div class="tech-tags">
             <span>Java</span><span>REST</span><span>DDD</span>
           </div>
         </div>
       </article>
 
-      <article class="project-card reveal" style="--accent:#34d0c6;--accent2:#3b82f6;">
+      <article class="project-card is-private reveal" style="--accent:#34d0c6;--accent2:#3b82f6;">
         <div class="project-media pattern-2">
+          <span class="private-badge" title="Repository access is restricted">🔒 Private</span>
           <span class="project-emoji">🥗</span>
         </div>
         <div class="project-body">
@@ -293,8 +314,9 @@
         </div>
       </article>
 
-      <article class="project-card reveal" style="--accent:#ff8a5c;--accent2:#ffd166;">
+      <article class="project-card is-private reveal" style="--accent:#ff8a5c;--accent2:#ffd166;">
         <div class="project-media pattern-3">
+          <span class="private-badge" title="Repository access is restricted">🔒 Private</span>
           <span class="project-emoji">🍽️</span>
         </div>
         <div class="project-body">
@@ -306,26 +328,28 @@
         </div>
       </article>
 
-      <article class="project-card reveal" style="--accent:#5c8bff;--accent2:#7c5cff;">
+      <article class="project-card is-private reveal" style="--accent:#5c8bff;--accent2:#7c5cff;">
         <div class="project-media pattern-4">
+          <span class="private-badge" title="Source is on a GitLab instance I no longer have access to">🔒 Private</span>
           <span class="project-emoji">🖥️</span>
         </div>
         <div class="project-body">
           <h3>CNC Panel Project</h3>
-          <p>A desktop app for AVID CNC machines featuring tool management, GCODE export, and 3D simulation.</p>
+          <p>A desktop app for AVID CNC machines featuring 12-tool management, GCODE export, and 3D simulation.</p>
           <div class="tech-tags">
             <span>Java</span><span>Swing</span>
           </div>
         </div>
       </article>
 
-      <article class="project-card reveal" style="--accent:#ff6ec7;--accent2:#ff8a5c;">
+      <article class="project-card is-private reveal" style="--accent:#ff6ec7;--accent2:#ff8a5c;">
         <div class="project-media pattern-5">
+          <span class="private-badge" title="Repository access is restricted">🔒 Private</span>
           <span class="project-emoji">🛒</span>
         </div>
         <div class="project-body">
           <h3>NRO Electronics</h3>
-          <p>A full-stack inventory and checkout/sales app for a retail chain, with JWT auth and role-based permissions.</p>
+          <p>A full-stack inventory platform tracking 1,100+ products across 130 categories, with role-based permissions.</p>
           <div class="tech-tags">
             <span>React</span><span>Node.js</span><span>MySQL</span>
           </div>
@@ -394,11 +418,6 @@
         <span class="contact-icon">✉️</span>
         <span class="contact-label">Email</span>
         <span class="contact-value">bernicetangngoufo@gmail.com</span>
-      </a>
-      <a href="tel:+13656884442" class="contact-card">
-        <span class="contact-icon">📱</span>
-        <span class="contact-label">Phone</span>
-        <span class="contact-value">365-688-4442</span>
       </a>
       <div class="contact-card">
         <span class="contact-icon">📍</span>
