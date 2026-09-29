@@ -167,6 +167,14 @@ button{ font-family: inherit; cursor:pointer; }
 .nav-links a:hover{ color: var(--text); }
 .nav-links a:hover::after{ width: 100%; }
 .nav-cta{ margin-left: 20px; }
+.resume-group{ display:flex; gap: 8px; }
+.resume-downloads{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  position: relative;
+}
+.resume-downloads .btn{ padding: 14px 16px; }
 .nav-toggle{
   display:none;
   flex-direction: column;
@@ -850,6 +858,7 @@ button{ font-family: inherit; cursor:pointer; }
     left: 40px;
   }
   .about-stats{ grid-template-columns: repeat(2, 1fr); }
+  .resume-downloads{ grid-template-columns: 1fr; }
   .projects-grid{ grid-template-columns: 1fr; }
   .form-row{ grid-template-columns: 1fr; }
   .hero{ padding: 120px 20px 80px; }

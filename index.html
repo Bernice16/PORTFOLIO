@@ -26,7 +26,10 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="assets/resume_EN.pdf" target="_blank" class="btn btn-small nav-cta">Resume</a>
+  <div class="nav-cta resume-group" aria-label="Download resume">
+    <a href="assets/resume_EN.pdf" download="Bernice_Tang_Ngoufo_Resume_EN.pdf" class="btn btn-small btn-outline" title="Download resume (English)">Resume · EN</a>
+    <a href="assets/resume_FR.pdf" download="Bernice_Tang_Ngoufo_CV_FR.pdf" class="btn btn-small btn-outline" title="Télécharger le CV (français)">CV · FR</a>
+  </div>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
@@ -146,7 +149,10 @@
             <li><span>🛠️</span> Java · Python · TypeScript · React</li>
             <li><span>☁️</span> AWS · Kubernetes · Docker · Kafka</li>
           </ul>
-          <a href="assets/resume_EN.pdf" target="_blank" class="btn btn-primary btn-full">Download Résumé</a>
+          <div class="resume-downloads">
+            <a href="assets/resume_EN.pdf" download="Bernice_Tang_Ngoufo_Resume_EN.pdf" class="btn btn-primary">Resume (EN) ↓</a>
+            <a href="assets/resume_FR.pdf" download="Bernice_Tang_Ngoufo_CV_FR.pdf" class="btn btn-outline">CV (FR) ↓</a>
+          </div>
         </div>
       </div>
     </div>
@@ -209,13 +215,14 @@
               <h3>Software Developer Intern</h3>
               <span class="timeline-company">Ticketmaster</span>
             </div>
-            <span class="timeline-date">May 2026 – Aug. 2026</span>
+            <span class="timeline-date">May 2026 – Present</span>
           </div>
           <ul>
-            <li>Eliminated a critical incident freezing purchase processing by adding validation to reject scans on non-existent seats, verified with 97% test coverage</li>
-            <li>Scaled the purchase pipeline's parallelism by growing Kafka topics and consumer replicas</li>
-            <li>Integrated a legacy ticketing system into the event-driven platform (Java, Spring, Kafka)</li>
-            <li>Delivered a fan-facing feature for assigning seats to dependents across 5 services via a two-wave rollout preserving backward compatibility</li>
+            <li>Resolved a critical production incident blocking ticket purchases by adding validation for invalid requests, verified with 97% test coverage (Java, Spring Boot)</li>
+            <li>Optimized the purchase pipeline's parallelism by scaling Kafka partitions 5x and replicas 4x (Kafka, Kubernetes)</li>
+            <li>Fixed silent data loss on multi-ticket orders by processing each ticket individually, ensuring 100% of tickets are handled</li>
+            <li>Enabled assigning a ticket to a dependent across 5 applications with zero downtime through a coordinated two-phase rollout</li>
+            <li>Used Claude Code daily to navigate, debug, and review code throughout the internship</li>
           </ul>
         </div>
       </div>
@@ -231,9 +238,9 @@
             <span class="timeline-date">Jan. 2026 – Apr. 2026</span>
           </div>
           <ul>
-            <li>Cut recurring incidents in insurance microservices (Java, Spring Boot) via domain-specific error handling</li>
-            <li>Restored cross-service transaction traceability by fixing JSON and MongoDB persistence defects</li>
-            <li>Raised automated coverage on critical workflows with Apache Camel unit and integration tests</li>
+            <li>Resolved JSON serialization and MongoDB persistence issues in microservices, restoring traceability of insurance transactions (Java, Spring Boot)</li>
+            <li>Strengthened service resilience against MongoDB connection losses by configuring timeouts, connection pools, Kubernetes probes, and retries</li>
+            <li>Migrated a Kafka consumer from Apache Camel to Spring Kafka, removing obsolete infrastructure configurations</li>
           </ul>
         </div>
       </div>
@@ -249,9 +256,9 @@
             <span class="timeline-date">May 2025 – Aug. 2025</span>
           </div>
           <ul>
-            <li>Removed a 1MB/425-order limit in a Java/Spring Boot service via event pagination, enabling large-scale events</li>
-            <li>Raised automated test coverage from 28% to 89.41% (JUnit, Mockito, GitLab CI job with JaCoCo)</li>
-            <li>Reduced support load by hardening error handling for third-party outages (GOLI, Atlas, Inventory)</li>
+            <li>Enabled large-scale event processing by introducing pagination in the order pipeline</li>
+            <li>Added a coverage report to GitLab CI and raised coverage from 28% to 89.41% with targeted tests, excluding an untestable 12,000-line class</li>
+            <li>Blocked cancellations of events still on sale by validating their status beforehand</li>
           </ul>
         </div>
       </div>
@@ -261,14 +268,14 @@
         <div class="timeline-card">
           <div class="timeline-head">
             <div>
-              <h3>Analyst Developer</h3>
+              <h3>Analyst Developer Intern</h3>
               <span class="timeline-company">Retraite Québec</span>
             </div>
             <span class="timeline-date">May 2024 – Dec. 2025</span>
           </div>
           <ul>
-            <li>Saved 75 hours monthly by automating email reports for 120 administrative units (Power Apps, Power Automate)</li>
-            <li>Raised employee awareness of conflicts of interest by designing and shipping a company-wide self-assessment tool</li>
+            <li>Saved 75 hours per month by automating email reports for 120 administrative units (Power Apps)</li>
+            <li>Raised employee awareness of conflicts of interest with a self-assessment tool deployed organization-wide</li>
           </ul>
         </div>
       </div>
@@ -285,6 +292,20 @@
     <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
 
     <div class="projects-grid">
+
+      <article class="project-card is-private reveal" style="--accent:#3b82f6;--accent2:#34d0c6;">
+        <div class="project-media pattern-6">
+          <span class="private-badge" title="Repository access is restricted">🔒 Private</span>
+          <span class="project-emoji">💬</span>
+        </div>
+        <div class="project-body">
+          <h3>Équipes-UL Collaboration Platform</h3>
+          <p>A Discord-style team platform (servers, channels, messaging, roles and permissions) delivered in 4 iterations with cloud deployment. Modular backend per business context (SOLID, Repository, Observer, Factory) and a React/TypeScript frontend backed by unit, integration and end-to-end tests in CI/CD.</p>
+          <div class="tech-tags">
+            <span>React</span><span>TypeScript</span><span>Java</span><span>REST</span><span>CI/CD</span>
+          </div>
+        </div>
+      </article>
 
       <article class="project-card is-private reveal" style="--accent:#7c5cff;--accent2:#ff6ec7;">
         <div class="project-media pattern-1">
@@ -368,35 +389,72 @@
 
     <div class="skills-grid">
       <div class="skill-card reveal">
-        <h3><span class="skill-icon">💻</span> Languages</h3>
+        <h3><span class="skill-icon">⚙️</span> Backend</h3>
         <div class="chip-row">
-          <span class="chip">Java</span><span class="chip">Python</span><span class="chip">C++</span>
-          <span class="chip">C</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span>
-          <span class="chip">HTML</span><span class="chip">CSS</span>
+          <span class="chip">Java</span><span class="chip">Python</span><span class="chip">C++</span><span class="chip">C</span>
+          <span class="chip">Spring Boot</span><span class="chip">Spring Kafka</span><span class="chip">REST</span>
+          <span class="chip">GraphQL</span><span class="chip">Flask</span><span class="chip">Express</span>
         </div>
       </div>
       <div class="skill-card reveal">
-        <h3><span class="skill-icon">🗄️</span> Backend &amp; Data</h3>
+        <h3><span class="skill-icon">🎨</span> Frontend</h3>
         <div class="chip-row">
-          <span class="chip">Spring Boot</span><span class="chip">Spring Kafka</span><span class="chip">Flask</span>
-          <span class="chip">REST</span><span class="chip">GraphQL</span><span class="chip">Hibernate</span>
-          <span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">CQL</span><span class="chip">DuckDB</span>
+          <span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">React</span>
+          <span class="chip">Vue</span><span class="chip">Angular</span><span class="chip">HTML</span><span class="chip">CSS</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="skill-icon">🗄️</span> Data &amp; Messaging</h3>
+        <div class="chip-row">
+          <span class="chip">Apache Kafka</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span>
+          <span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Cassandra (CQL)</span><span class="chip">DuckDB</span>
         </div>
       </div>
       <div class="skill-card reveal">
         <h3><span class="skill-icon">☁️</span> Cloud &amp; DevOps</h3>
         <div class="chip-row">
-          <span class="chip">AWS</span><span class="chip">Kubernetes</span><span class="chip">Docker</span>
-          <span class="chip">Helm</span><span class="chip">Apache Kafka</span><span class="chip">GitLab CI</span>
-          <span class="chip">Azure DevOps</span><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Dynatrace</span>
+          <span class="chip">Kubernetes</span><span class="chip">Docker</span><span class="chip">Helm</span>
+          <span class="chip">Rancher</span><span class="chip">AWS</span><span class="chip">GitLab CI/CD</span><span class="chip">Azure DevOps</span>
         </div>
       </div>
       <div class="skill-card reveal">
-        <h3><span class="skill-icon">🎨</span> Frontend &amp; Tools</h3>
+        <h3><span class="skill-icon">📈</span> Observability</h3>
         <div class="chip-row">
-          <span class="chip">React</span><span class="chip">Vue</span><span class="chip">Angular</span>
+          <span class="chip">Dynatrace</span><span class="chip">Splunk</span><span class="chip">Prometheus</span><span class="chip">Grafana</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="skill-icon">🧪</span> Testing</h3>
+        <div class="chip-row">
           <span class="chip">JUnit</span><span class="chip">Mockito</span><span class="chip">Cucumber</span>
-          <span class="chip">Postman</span><span class="chip">Git</span><span class="chip">Jira</span><span class="chip">Figma</span>
+          <span class="chip">Postman</span><span class="chip">Bruno</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="skill-icon">✨</span> Best Practices</h3>
+        <div class="chip-row">
+          <span class="chip">SOLID Principles</span><span class="chip">Clean Code</span><span class="chip">DDD</span>
+          <span class="chip">TDD</span><span class="chip">Design Patterns</span><span class="chip">Code Review</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="skill-icon">🏛️</span> Architectural Styles</h3>
+        <div class="chip-row">
+          <span class="chip">Hexagonal</span><span class="chip">Layered</span><span class="chip">Event-Driven</span>
+          <span class="chip">Microservices</span><span class="chip">CQRS</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="skill-icon">🗂️</span> Version Control &amp; Project Management</h3>
+        <div class="chip-row">
+          <span class="chip">Git</span><span class="chip">GitLab</span><span class="chip">GitHub</span>
+          <span class="chip">Jira</span><span class="chip">Notion</span><span class="chip">Trello</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="skill-icon">🤖</span> AI Tools</h3>
+        <div class="chip-row">
+          <span class="chip">Claude Code</span>
         </div>
       </div>
     </div>
